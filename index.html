@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>楊頌璇 Yang, song-syuan | 品牌視覺設計師履歷</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lightBg: '#FCFAF5',
+            lightText: '#A2A427',
+            darkBg: '#2C431E',
+            paleGreen: '#E8F0DF'
+          },
+          boxShadow: {
+            soft: '0 18px 50px rgba(44, 67, 30, 0.08)',
+            lift: '0 28px 70px rgba(44, 67, 30, 0.16)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --light-bg: #FCFAF5;
+      --light-text: #A2A427;
+      --dark-bg: #2C431E;
+      --pale-green: #E8F0DF;
+    }
+
+    body {
+      background: var(--light-bg);
+      color: var(--light-text);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: var(--dark-bg);
+      color: var(--light-bg);
+    }
+
+    .font-cn-title {
+      font-family: "Noto Serif TC", "Source Han Serif TC", serif;
+      font-weight: 700;
+    }
+
+    .font-cn-body {
+      font-family: "Noto Serif TC", "Source Han Serif TC", serif;
+      font-weight: 400;
+    }
+
+    .font-en {
+      font-family: "Polluxie Feminine Serif Font", "Cormorant Garamond", serif;
+    }
+
+    .hero-bg {
+      background-image:
+        linear-gradient(180deg, rgba(44, 67, 30, 0.18) 0%, rgba(44, 67, 30, 0.42) 100%),
+        url('./images/hero-bg.jpg');
+      background-size: cover;
+      background-position: center 0px;
+      background-repeat: no-repeat;
+    }
+
+    .avatar-ring {
+      box-shadow: 0 10px 24px rgba(0,0,0,0.14);
+    }
+
+    .floating {
+      transform-style: preserve-3d;
+      transition: transform 0.28s ease, box-shadow 0.28s ease;
+      will-change: transform;
+      backface-visibility: hidden;
+    }
+
+    .floating:hover {
+      box-shadow: 0 28px 70px rgba(44, 67, 30, 0.16);
+    }
+
+    .thin-line::after {
+      content: "";
+      display: block;
+      width: 52px;
+      height: 1px;
+      margin: 14px auto 0;
+      background: currentColor;
+      opacity: 0.45;
+    }
+
+    .reveal-up {
+      opacity: 0;
+      transform: translateY(48px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .reveal-up.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.08s; }
+    .reveal-delay-2 { transition-delay: 0.16s; }
+    .reveal-delay-3 { transition-delay: 0.24s; }
+    .reveal-delay-4 { transition-delay: 0.32s; }
+
+    .parallax-soft {
+      transition: transform 0.15s linear;
+      will-change: transform;
+    }
+
+    .nav-icon {
+      transition: transform 0.28s ease, opacity 0.28s ease;
+    }
+
+    .nav-icon:hover {
+      transform: translateY(-4px);
+      opacity: 0.72;
+    }
+
+    .work-image-link img {
+      transition: transform 0.45s ease;
+    }
+
+    .work-image-link:hover img {
+      transform: scale(1.035);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal-up,
+      .floating,
+      .parallax-soft,
+      .work-image-link img,
+      .nav-icon {
+        transition: none !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="font-cn-body leading-relaxed text-lightText bg-lightBg">
+
+  <nav class="fixed top-0 inset-x-0 z-50 border-b border-[rgba(162,164,39,0.14)] bg-[rgba(252,250,245,0.92)] backdrop-blur-xl">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="min-h-[72px] flex items-center justify-between gap-4">
+        <a href="#top" class="font-en text-2xl tracking-wide text-lightText">Song</a>
+        <div class="flex flex-wrap items-center gap-4 text-xl">
+          <a href="https://www.instagram.com/song.hanada?igsh=eDA2cHB2eHl1dWZz&utm_source=qr" target="_blank" rel="noreferrer" aria-label="Instagram" class="nav-icon flex items-center justify-center">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://reurl.cc/lY6RNA" target="_blank" rel="noreferrer" aria-label="作品集" class="nav-icon flex items-center justify-center">
+            <i class="fa-solid fa-images"></i>
+          </a>
+          <a href="https://www.behance.net/amini2203389f2" target="_blank" rel="noreferrer" aria-label="Behance" class="nav-icon flex items-center justify-center">
+            <i class="fa-brands fa-behance"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top" class="pt-[72px]">
+    <section id="hero" class="hero-bg min-h-[92vh] md:min-h-[860px] text-white flex items-center justify-center px-6 py-14">
+      <div class="max-w-4xl w-full text-center parallax-soft" data-parallax-speed="0.18">
+        <div class="w-32 h-32 md:w-36 md:h-36 rounded-full overflow-hidden mx-auto mb-7 avatar-ring reveal-up">
+          <img src="./images/avatar.jpg" alt="個人頭貼" class="w-full h-full object-cover">
+        </div>
+        <p class="font-en text-xl md:text-2xl tracking-[0.08em] uppercase mb-2 reveal-up reveal-delay-1">Brand Visual Designer</p>
+        <h1 class="font-cn-title text-4xl md:text-6xl tracking-[0.08em] mb-1 reveal-up reveal-delay-2">楊頌璇</h1>
+        <p class="font-en text-2xl md:text-4xl leading-none mb-5 reveal-up reveal-delay-2">Yang, song-syuan</p>
+        <p class="font-cn-body text-lg md:text-2xl max-w-3xl mx-auto leading-loose text-[rgba(255,255,255,0.96)] reveal-up reveal-delay-3">
+          擅長以細膩的視覺，將品牌想傳達的概念<br class="hidden md:block">轉化為具有故事與溫度的視覺呈現。
+        </p>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-4 reveal-up reveal-delay-4">
+          <a href="#about" class="px-6 py-3 border border-white/70 rounded-full hover:-translate-y-1 transition duration-300">個人簡介</a>
+          <a href="#works" class="px-6 py-3 border border-white/70 rounded-full hover:-translate-y-1 transition duration-300">查看作品</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-lightBg py-24 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="font-en text-lg md:text-xl tracking-[0.18em] uppercase thin-line mb-8 reveal-up">About Me</p>
+        <h2 class="font-cn-title text-3xl md:text-5xl mb-10 reveal-up reveal-delay-1">個人簡介</h2>
+        <div class="max-w-3xl mx-auto space-y-7 text-base md:text-lg leading-loose text-[rgba(162,164,39,0.94)]">
+          <p class="reveal-up reveal-delay-2">
+            我畢業於台灣科技大學設計系，具備兩年平面與品牌設計經驗，擅長版面編排、色彩配置與整體視覺一致性。在過往的設計經驗中，我主要負責品牌視覺製作，包含社群圖文、活動主視覺、行銷視覺製作、裝幀設計、印刷物設計，熟悉從視覺發想到實際製作與輸出的完整流程。並能依據不同情境調整視覺語言，使設計兼具美感與溝通效率。
+          </p>
+          <p class="reveal-up reveal-delay-3">
+            此外，我曾自行經營花店社群帳號，從作品拍攝、選圖修圖到文案撰寫皆獨立完成，並持續觀察貼文互動與呈現方式，優化內容表現。這段經驗讓我理解社群素材不僅是視覺呈現，更需要結合節奏、主題與受眾感受，才能有效提升關注與互動。對我而言，設計不只是單張圖片，而是一種能傳遞生活感與品牌氛圍的整體表現。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="bg-darkBg text-paleGreen py-24 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="font-en text-lg md:text-xl tracking-[0.18em] uppercase thin-line mb-8 text-[rgba(232,240,223,0.92)] reveal-up">PROFESSIONAL SKILLS</p>
+        <h2 class="font-cn-title text-3xl md:text-5xl mb-14 text-white reveal-up reveal-delay-1">專業技能</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-6 max-w-5xl mx-auto">
+          <article class="skill-card floating md:col-span-3 p-8 text-center reveal-up reveal-delay-1">
+            <div class="w-24 h-24 mx-auto flex items-center justify-center text-5xl mb-5"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3 class="font-cn-title text-2xl text-white mb-4">品牌識別設計</h3>
+            <p class="leading-loose text-[rgba(232,240,223,0.92)]">Logo設計、品牌視覺延伸與應用規劃、包裝設計</p>
+          </article>
+
+          <article class="skill-card floating md:col-span-3 p-8 text-center reveal-up reveal-delay-2">
+            <div class="w-24 h-24 mx-auto flex items-center justify-center text-5xl mb-5"><i class="fa-solid fa-panorama"></i></div>
+            <h3 class="font-cn-title text-2xl text-white mb-4">行銷版面設計</h3>
+            <p class="leading-loose text-[rgba(232,240,223,0.92)]">活動主視覺、社群宣傳圖、平面文宣設計<br>（DM、海報、型錄）</p>
+          </article>
+
+          <article class="skill-card floating md:col-span-2 p-8 text-center reveal-up reveal-delay-2">
+            <div class="w-24 h-24 mx-auto flex items-center justify-center text-5xl mb-5"><i class="fa-solid fa-image"></i></div>
+            <h3 class="font-cn-title text-2xl text-white mb-4">影像處理</h3>
+            <p class="leading-loose text-[rgba(232,240,223,0.92)]">商品與影像修圖、顏色校正與視覺優化、基本剪輯</p>
+          </article>
+
+          <article class="skill-card floating md:col-span-2 p-8 text-center reveal-up reveal-delay-3">
+            <div class="w-24 h-24 mx-auto flex items-center justify-center text-5xl mb-5"><i class="fa-solid fa-print"></i></div>
+            <h3 class="font-cn-title text-2xl text-white mb-4">印刷製作</h3>
+            <p class="leading-loose text-[rgba(232,240,223,0.92)]">印刷檔案整理與完稿</p>
+          </article>
+
+          <article class="skill-card floating md:col-span-2 p-8 text-center reveal-up reveal-delay-4">
+            <div class="w-24 h-24 mx-auto flex items-center justify-center text-5xl mb-5"><i class="fa-solid fa-hashtag"></i></div>
+            <h3 class="font-cn-title text-2xl text-white mb-4">社群經營</h3>
+            <p class="leading-loose text-[rgba(232,240,223,0.92)]">社群經營與企劃、文案</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="bg-lightBg py-24 px-6">
+      <div class="max-w-6xl mx-auto space-y-8">
+        <article class="floating rounded-[28px] border border-[rgba(162,164,39,0.14)] bg-white/70 shadow-soft px-8 py-12 text-center reveal-up">
+          <p class="font-en text-lg tracking-[0.18em] uppercase thin-line mb-8">Design Tools</p>
+          <h2 class="font-cn-title text-3xl md:text-4xl mb-10">設計工具</h2>
+          <div class="flex flex-wrap justify-center gap-3 text-sm md:text-base">
+            <span class="px-4 py-2 rounded-full border border-[rgba(162,164,39,0.18)]">Adobe Illustrator</span>
+            <span class="px-4 py-2 rounded-full border border-[rgba(162,164,39,0.18)]">Adobe Photoshop</span>
+            <span class="px-4 py-2 rounded-full border border-[rgba(162,164,39,0.18)]">Adobe InDesign</span>
+            <span class="px-4 py-2 rounded-full border border-[rgba(162,164,39,0.18)]">Adobe Premiere</span>
+            <span class="px-4 py-2 rounded-full border border-[rgba(162,164,39,0.18)]">Figma</span>
+            <span class="px-4 py-2 rounded-full border border-[rgba(162,164,39,0.18)]">Blender</span>
+            <span class="px-4 py-2 rounded-full border border-[rgba(162,164,39,0.18)]">Canva</span>
+            <span class="px-4 py-2 rounded-full border border-[rgba(162,164,39,0.18)]">Notion</span>
+          </div>
+        </article>
+
+        <article class="floating rounded-[28px] border border-[rgba(162,164,39,0.14)] bg-white/70 shadow-soft px-8 py-12 text-center reveal-up reveal-delay-1">
+          <p class="font-en text-lg tracking-[0.18em] uppercase thin-line mb-8">Licenses</p>
+          <h2 class="font-cn-title text-3xl md:text-4xl mb-10">專業證照</h2>
+          <div class="flex flex-row flex-wrap justify-center gap-6">
+            <div class="w-[240px] h-[240px] rounded-full bg-darkBg text-white flex flex-col items-center justify-center p-8 floating reveal-up reveal-delay-2">
+              <div class="text-3xl mb-4"><i class="fa-solid fa-file-lines"></i></div>
+              <h3 class="font-cn-title text-lg leading-relaxed mb-2">印前製程-丙級</h3>
+              <p class="text-sm leading-relaxed text-[rgba(255,255,255,0.88)]">Level C Prepress Process－Image and Text Pagination PC</p>
+            </div>
+            <div class="w-[240px] h-[240px] rounded-full bg-darkBg text-white flex flex-col items-center justify-center p-8 floating reveal-up reveal-delay-3">
+              <div class="text-3xl mb-4"><i class="fa-solid fa-seedling"></i></div>
+              <h3 class="font-cn-title text-lg leading-relaxed mb-2">美國芝加哥花藝證照</h3>
+              <p class="text-sm leading-relaxed text-[rgba(255,255,255,0.88)]">AMERICAN FLORAL ART SCHOOL-Academic Diploma</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="works" class="bg-lightBg py-24 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="font-en text-lg md:text-xl tracking-[0.18em] uppercase thin-line mb-8 reveal-up">Selected Works</p>
+        <h2 class="font-cn-title text-3xl md:text-5xl mb-14 reveal-up reveal-delay-1">我的作品</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article class="floating rounded-[28px] overflow-hidden border border-[rgba(162,164,39,0.14)] bg-white shadow-soft text-left reveal-up reveal-delay-1">
+            <a href="https://reurl.cc/lY6RNA" target="_blank" rel="noreferrer" class="work-image-link block overflow-hidden">
+              <img src="./images/work-1.jpg" alt="品牌識別作品縮圖" class="w-full aspect-[4/3] object-cover">
+            </a>
+            <div class="p-6 text-center">
+              <h3 class="font-cn-title text-2xl mb-3">品牌識別設計</h3>
+              <p class="mb-4 text-[rgba(162,164,39,0.92)]">以品牌核心延伸 Logo、視覺語言與應用規劃。</p>
+              <a href="https://reurl.cc/lY6RNA" target="_blank" rel="noreferrer" class="font-en text-lg">View Project ↗</a>
+            </div>
+          </article>
+
+          <article class="floating rounded-[28px] overflow-hidden border border-[rgba(162,164,39,0.14)] bg-white shadow-soft text-left reveal-up reveal-delay-2">
+            <a href="https://www.behance.net/amini2203389f2" target="_blank" rel="noreferrer" class="work-image-link block overflow-hidden">
+              <img src="./images/work-2.jpg" alt="其他設計作品縮圖" class="w-full aspect-[4/3] object-cover">
+            </a>
+            <div class="p-6 text-center">
+              <h3 class="font-cn-title text-2xl mb-3">其他設計作品</h3>
+              <p class="mb-4 text-[rgba(162,164,39,0.92)]">推測設計、UIUX設計。</p>
+              <a href="https://www.behance.net/amini2203389f2" target="_blank" rel="noreferrer" class="font-en text-lg">View Project ↗</a>
+            </div>
+          </article>
+
+          <article class="floating rounded-[28px] overflow-hidden border border-[rgba(162,164,39,0.14)] bg-white shadow-soft text-left reveal-up reveal-delay-3">
+            <a href="https://www.instagram.com/song.hanada?igsh=eDA2cHB2eHl1dWZz&utm_source=qr" target="_blank" rel="noreferrer" class="work-image-link block overflow-hidden">
+              <img src="./images/work-3.jpg" alt="花藝社群經營作品縮圖" class="w-full aspect-[4/3] object-cover">
+            </a>
+            <div class="p-6 text-center">
+              <h3 class="font-cn-title text-2xl mb-3">花藝社群經營</h3>
+              <p class="mb-4 text-[rgba(162,164,39,0.92)]">「送花的人」品牌經營與管理，結合作品拍攝、修圖與文案，建立一致的社群氛圍。</p>
+              <a href="https://www.instagram.com/song.hanada?igsh=eDA2cHB2eHl1dWZz&utm_source=qr" target="_blank" rel="noreferrer" class="font-en text-lg">View Project ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-lightBg pb-14 px-6 text-center reveal-up">
+      <p class="font-en text-xl mb-2">Song Visual Portfolio</p>
+      <p class="text-sm md:text-base text-[rgba(162,164,39,0.86)]">品牌視覺設計 / Brand Visual Designer</p>
+    </footer>
+  </main>
+
+  <script>
+    const tiltTargets = document.querySelectorAll('.floating');
+
+    tiltTargets.forEach((card) => {
+      const maxRotate = 5;
+      card.addEventListener('mousemove', (event) => {
+        const rect = card.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        const rotateY = ((x / rect.width) - 0.5) * maxRotate * 2;
+        const rotateX = ((y / rect.height) - 0.5) * -maxRotate * 2;
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+      });
+    });
+
+    const revealElements = document.querySelectorAll('.reveal-up');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach((el) => revealObserver.observe(el));
+
+    const hero = document.querySelector('#hero');
+    const parallaxItems = document.querySelectorAll('[data-parallax-speed]');
+
+    function updateParallax() {
+      const scrolled = window.pageYOffset;
+
+      if (hero) {
+        hero.style.backgroundPosition = `center ${scrolled * 0.22}px`;
+      }
+
+      parallaxItems.forEach((item) => {
+        const speed = parseFloat(item.dataset.parallaxSpeed || '0.15');
+        item.style.transform = `translateY(${scrolled * speed}px)`;
+      });
+    }
+
+    window.addEventListener('scroll', updateParallax, { passive: true });
+    updateParallax();
+  </script>
+</body>
+</html>
